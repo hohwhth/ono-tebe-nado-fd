@@ -342,6 +342,8 @@
   padding: 0 50px 0;
 }
 
+/* menu */
+
 .footer__menu {
   display: flex;
   flex-direction: column;
@@ -349,8 +351,8 @@
   list-style: none;
 }
 
-.footer__address {
-  list-style: none;
+.footer__menu a {
+  text-decoration: none;
 }
 
 .footer__links-list {
@@ -366,9 +368,13 @@
   line-height: 1;
 }
 
-.footer__menu a {
-  text-decoration: none;
+/* address */
+
+.footer__address {
+  list-style: none;
 }
+
+/* links */
 
 .footer__link {
   display: inline-block;
