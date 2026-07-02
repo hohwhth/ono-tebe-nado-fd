@@ -1,1 +1,392 @@
-/* место для вашего кода */
+/* HEADER */
+
+.header {
+  height: 293px;
+  width: 100%;
+  background-color: white;
+  padding: 92px 50px 100px; 
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  font-weight: normal;
+}
+
+/* menu */
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__links-list {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 33px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  line-height: 1;
+}
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__menu a {
+  text-decoration: none;
+}
+
+.header__link {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
+/* logo */
+
+.header__logo-image {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+/* address */
+
+.address {
+  justify-self: end;
+  width: 240px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.header__address {
+  list-style: none;
+}
+
+.address a {
+  text-decoration: none;
+}
+
+.address__underline {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
+/* COVER */
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  width: 100%;
+  background: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.overlay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  padding: 165px 50px 50px;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .6);
+  z-index: 1;
+}
+
+/* heading */
+
+.cover__title {
+  display: flex;
+  width: 1000px;
+  height: 385px;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+
+.aligned-text {
+    display: inline-block;
+}
+
+.aligned-text_left {
+  align-self: flex-start;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30%;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+/* cover description */
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+}
+
+.cover__description-text {
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white;
+  width: 256px;
+  height: 51px;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: white;
+  border-width: 1px;
+}
+
+/* LOTS */
+
+.lots {
+  margin: 180px 24px 120px;
+  height: 725px;
+  width: 1052px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* lots heading */
+
+.lots__heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 27px 40px;
+  text-transform: uppercase;
+}
+
+/* lots cards */
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 25px;
+  height: 596px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.lots__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .6);
+  z-index: 1;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 48px 40px;
+  z-index: 2;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_text_type_picture {
+  margin-right: -5px;
+  margin-bottom: 24px;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+  line-height: 120%;
+  z-index: 3;
+}
+
+.card__text {
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  line-height: 120%;
+  align-self: flex-end;
+  z-index: 3;
+}
+
+/* lots more link */
+
+.lots__look-more-link {
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+  width: fit-content;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+
+/* ABOUT */
+
+.about {
+  margin: 120px 24px 180px;
+  height: 595px;
+  width: 1052px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* about logo */
+
+.about__logo-background {
+  background-color: #000;
+  border-radius: 100%;
+  width: 240px;
+  height: 240px;
+  margin: 35px 0 0 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo {
+  width: 148px;
+}
+
+/* about text */
+
+.about__text_column {
+  width: 688px;
+  align-self: end;
+  margin-right: 5px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.about__title {
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.about__text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+/* FOOTER */
+
+.footer {
+  height: 180px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+}
+
+.footer__address {
+  list-style: none;
+}
+
+.footer__links-list {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+}
+
+.footer__links-list-item {
+  line-height: 1;
+}
+
+.footer__menu a {
+  text-decoration: none;
+}
+
+.footer__link {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}
