@@ -362,6 +362,13 @@
   line-height: 1;
 }
 
+.footer__link {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
 .footer__link_active {
   border-width: 0;
   margin-bottom: 1px;
@@ -376,12 +383,6 @@
 
 /* links */
 
-.footer__link {
-  display: inline-block;
-  line-height: 1;
-  border-bottom: 1px solid #000;
-  padding-bottom: 1px;
-}
 
 .footer__social-list {
   display: flex;
